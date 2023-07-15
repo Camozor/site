@@ -8,7 +8,8 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - /home/debian/webserver/Caddyfile:/etc/caddy/Caddyfile
+      - /home/debian/site/config/Caddyfile:/etc/caddy/Caddyfile
+      - /home/debian/site/server:/usr/share/caddy
       - caddy_data:/data
       - caddy_config:/config
 
