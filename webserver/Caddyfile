@@ -1,0 +1,4 @@
+camillevauchel.fr {
+  root * /home/debian/webserver
+  file_server
+}

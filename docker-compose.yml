@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  caddy:
+    image: caddy:2.6.4-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /home/debian/webserver/Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:
