@@ -1,4 +1,4 @@
 camillevauchel.fr {
-  root * /home/debian/site/server
+  root * /usr/share/caddy
   file_server
 }
