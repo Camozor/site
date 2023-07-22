@@ -1,4 +1,4 @@
 camillevauchel.fr {
-  root * /usr/share/caddy
-  file_server
+        root * /usr/share/caddy
+        file_server
 }
